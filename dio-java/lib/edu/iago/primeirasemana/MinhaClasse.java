@@ -1,4 +1,4 @@
-import java.io.Console;
+package edu.iago.primeirasemana;
 
 public class MinhaClasse {
   

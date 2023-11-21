@@ -1,3 +1,5 @@
+package edu.iago.primeirasemana;
+
 public class BoletimEscolar {
 
   //Anatomia das classes 4 - Identação
