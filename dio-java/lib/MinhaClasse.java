@@ -26,7 +26,7 @@ public class MinhaClasse {
 
   //Anatomia 3.2
   public static String nomeCompleto(String primeiroNome, String segundoNome){
-    return "Resultado do metódo".concat(primeiroNome).concat(" ").concat(segundoNome);
+    return "Resultado do metódo ".concat(primeiroNome).concat(" ").concat(segundoNome);
   }
 
 }
