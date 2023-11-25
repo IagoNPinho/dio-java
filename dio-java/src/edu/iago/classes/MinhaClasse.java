@@ -1,4 +1,4 @@
-package edu.iago.primeirasemana;
+package edu.iago.classes;
 
 public class MinhaClasse {
   
