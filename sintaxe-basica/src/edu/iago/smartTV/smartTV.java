@@ -20,11 +20,12 @@ public class smartTV {
   private boolean ligada = false;
   private int canal = 1;
   private int volume = 95;
-  
-  
+
   /**
    * Este metódo é utilizado para ligar a televisão.
-   * @throws Ligada Caso a TV já esteja ligada, ele a desliga igual ao controle de televisão.
+   * 
+   * @throws Ligada Caso a TV já esteja ligada, ele a desliga igual ao controle de
+   *                televisão.
    */
   public void ligar() {
     if (ligada == false) {
@@ -36,11 +37,12 @@ public class smartTV {
       System.out.println("Desligando... Até mais!");
     }
   }
-  
-  
+
   /**
    * Este metódo é utilizado para desligar a televisão.
-   * @throws Desligada Caso a TV já esteja desligada, ele a liga igual ao controle de televisão.
+   * 
+   * @throws Desligada Caso a TV já esteja desligada, ele a liga igual ao controle
+   *                   de televisão.
    */
   public void desligar() {
     if (ligada == true) {
@@ -52,10 +54,10 @@ public class smartTV {
       System.out.println("Olá!");
     }
   }
-  
-  
+
   /**
    * Este metódo é utilizado para avançar para o próximo canal.
+   * 
    * @return int o canal que irá avançar
    * @throws Máximo Caso a TV já esteja no último canal, ele irá para o primeiro.
    */
@@ -70,11 +72,11 @@ public class smartTV {
       return canal;
     }
   }
-  
-  
+
   /**
    * Este metódo é utilizado para voltar ao canal anterior.
    * Caso a TV já esteja no primeiro canal, ele irá para o último.
+   * 
    * @return int o canal que irá voltar.
    */
   public int canalAnterior() {
@@ -88,29 +90,29 @@ public class smartTV {
       return canal;
     }
   }
-  
-  
+
   /**
    * Este metódo é utilizado para indicar qual canal deseja ir.
    * Caso o canal inserido não exista, ele continuar no mesmo canal.
+   * 
    * @return int o canal que irá mudar.
    */
   public int inserirCanal(int newCanal) {
-    if(newCanal > 99 || newCanal<1){
-      System.out.println("Canal " + newCanal +" Inexistente!");
+    if (newCanal > 99 || newCanal < 1) {
+      System.out.println("Canal " + newCanal + " Inexistente!");
       System.out.println("Canal atual" + canal);
       return canal;
-    }else{
+    } else {
       canal = newCanal;
       System.out.println("Canal " + canal);
       return canal;
     }
   }
-  
-  
+
   /**
    * Este metódo é utilizado para aumentar o volume.
    * Caso a TV já esteja no último volume, ele não irá aumentar.
+   * 
    * @return int o canal que irá avançar
    */
   public int aumentarVolume() {
@@ -123,11 +125,11 @@ public class smartTV {
       return volume;
     }
   }
-  
-  
+
   /**
    * Este metódo é utilizado para diminuir o volume.
    * Caso a TV já esteja no menor volume, ele não irá diminuir.
+   * 
    * @return int o canal que irá avançar
    */
   public int diminuirVolume() {
