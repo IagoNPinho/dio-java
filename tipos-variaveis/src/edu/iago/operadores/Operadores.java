@@ -37,8 +37,10 @@ public class Operadores {
     // (decremento de valor) ; ! (negação lógica)
     int positivo = +4; // Declara que o valor é positivo (feito de forma implicita)
     int negativo = -4; // Funciona como uma inversão de valores igual ao ! ou a expressão (*-1);
+    
     negativo = -negativo;
     System.out.println(negativo);
+
     negativo = -negativo;
     System.out.println(negativo);
 
@@ -53,7 +55,7 @@ public class Operadores {
 
     // -------Operador Ternario-------
     // (Condição)?(Valor para condição verdadeira):(Valor para condição negativa)
-    // utilizado no lugar do if(){}Else{} quando se trata de opções de leitura
+    // utilizado no lugar do IfElse quando se trata de opções de leitura
     // rápida.
 
     String iguais = negativo == positivo ? "True" : "False";
