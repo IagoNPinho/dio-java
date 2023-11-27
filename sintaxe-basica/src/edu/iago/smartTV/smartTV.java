@@ -95,6 +95,7 @@ public class smartTV {
    * Este metódo é utilizado para indicar qual canal deseja ir.
    * Caso o canal inserido não exista, ele continuar no mesmo canal.
    * 
+   * @param newCanal o canal que deseja assistir
    * @return int o canal que irá mudar.
    */
   public int inserirCanal(int newCanal) {
