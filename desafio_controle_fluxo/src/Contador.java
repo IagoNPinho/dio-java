@@ -25,6 +25,5 @@ public class Contador {
             System.out.println("Impimindo o número " + index);
 
         }
-		//realizar o for para imprimir os números com base na variável contagem
 	}
 }
