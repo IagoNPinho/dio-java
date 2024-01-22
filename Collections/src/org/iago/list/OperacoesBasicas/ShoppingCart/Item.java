@@ -6,15 +6,25 @@ public class Item {
     private int quantity;
     
     public Item(String description, double price, int quantity){
-        setDescription(description, price, quantity);
+        setDescription(description);
+        setPrice(price);
+        setQuantity(quantity);
     }
 
-    private void setDescription(String description, double price, int quantity) {
+    // Setters
+    public void setDescription(String description) {
         this.description = description;
+    }
+
+    public void setPrice(double price) {
         this.price = price;
+    }
+
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 
+    // Getters
     public String getDescription(){
         return description;
     }
