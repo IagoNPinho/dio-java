@@ -28,12 +28,14 @@ public class Contact {
   }
 
   @Override
-  public boolean equals(Object o){
-    if(this == o){
-      return true;
-    } else if(!(o instanceof Contact contact)){
-      return false;
-    }
+  public int hashCode() {
+    return Objects.hash(name);
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof Contact contact)) return false;
     return Objects.equals(getName(), contact.getName());
   }
 
